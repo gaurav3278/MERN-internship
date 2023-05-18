@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .app_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .horizontalNav{
+        border: 1px solid black;
+        padding:10px 5px;
+        font-size: large;
+        width: 50%;
+    }
+
+    p{
+        font-size: 11px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav1{
+        padding: 10px;
+        background-color: rgb(155, 220, 220);
+        color: blue;
+    }
+
+    .verticalNav{
+        display: flex;
+        border: 1px solid black;
+        padding: 10px 0px 10px 5px;
+        width: 80%;
+    }
+
+    .nav2{
+        width: 20%;
+        padding: 5px;
+        background-color: rgb(203, 202, 202);
+        color: blue;
+        border-right: 1px solid blue;
+    }
+
+    
+</style>
+
+<body>
+    <div class="app_container">
+        <div class="nav">
+            <p>Vertical Navigation Bar</p>
+            <div class="horizontalNav">
+                <div class="nav1" style="background-color: rgb(245, 167, 65);color:white">Home</div>
+                <div class="nav1">Java</div>
+                <div class="nav1">CSS</div>
+                <div class="nav1">HTML</div>
+                <div class="nav1">Bootstrap</div>
+            </div>
+        </div>
+        <div class="nav">
+            <p>Horizontal Navigation Bar</p>
+            <div class="verticalNav">
+                <div class="nav2" style="background-color: gray; color: white;">Home</div>
+                <div class="nav2">Java</div>
+                <div class="nav2">HTML</div>
+                <div class="nav2">CSS</div>
+                <div class="nav2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
