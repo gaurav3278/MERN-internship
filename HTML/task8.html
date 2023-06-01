@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form_container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        h1{
+            margin-bottom: 0px;
+        }
+        .form_body{
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+        .form_input{
+            display: flex;
+            width: 100%;
+        }
+        .input_box{
+            width: 440px;
+        }
+        label{
+            width: 150px;
+            font-weight:bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+        .input_box input{
+            width: 100%;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="" class="form_container">
+        <h1 style="color: blue;font-weight: bold;">Registration Form</h1>
+        <div class="form_body">
+            <div class="form_input">
+                <label for="firstName">First Name</label>
+                <div class="input_box">
+                    <input id="firstName" type="text">
+                </div>
+            </div>
+            <div class="form_input">
+                <label>Last Name</label>
+                <div class="input_box">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="form_input">
+                <label>Email</label>
+                <div class="input_box">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="form_input">
+                <label>Password</label>
+                <div class="input_box">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="form_input">
+                <label>Re-enter Password</label>
+                <div class="input_box">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="form_input">
+                <label>Gender:</label>
+                <div style="display: flex;flex-direction: column;width: 446.5px;">
+                    <div style="display: flex;border: 1px solid black;width: 100%;justify-content: start;">    
+                        <input type="radio">
+                        <div>Male</div>
+                    </div>
+                    <div style="display: flex;border: 1px solid black;width: 100%;">
+                        <input type="radio">
+                        <div>Female</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_input">
+                <label>Age:</label>
+                <div class="input_box">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="form_input">
+                <label>Phone Number</label>
+                <div class="input_box">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="form_input">
+                <label>Address</label>
+                <div class="input_box">
+                    <textarea name="" id="" cols="58" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="form_input">
+                <label>State</label>
+                <div class="input_box">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="form_input">
+                <label>Country</label>
+                <div class="input_box">
+                    <select style="outline: none;" name="" id="">
+                        <option value="" hidden>Choose Your Country</option>
+                        <option value="">India</option>
+                        <option value="">Japan</option>
+                        <option value="">USA</option>
+                        <option value="">Bangladesh</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form_input">
+                <label>Languages known</label>
+                <div style="display: flex;border: 1px solid black;width: 446.5px;">
+                    <input type="checkbox">
+                    <div>English</div>
+                    <input type="checkbox">
+                    <div>Kannad</div>
+                    <input type="checkbox">
+                    <div>Hindi</div>
+                    <input type="checkbox">
+                    <div>Telgu</div>
+                </div>
+            </div>
+            <div style="border:1px solid black;width: 100%;gap: 10px;display: flex;align-items: center;justify-content: flex-start;">
+                <div>
+                    <input type="checkbox" name="" id="check">
+                </div>
+                <div for="check">Hereby I declare  all the given details are true</div>
+            </div>
+            <div style="display: flex;justify-content: flex-end;width: 100%;">
+                <div>Log in to <a href="">Ethnus</a> website</div>
+            </div>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
